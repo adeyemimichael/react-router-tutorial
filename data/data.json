@@ -1,4 +1,4 @@
-[
+{"careers":[
   {
     "id": 1,
     "name": "Alice",
@@ -131,4 +131,4 @@
     "work": "Content Writer",
     "salary": 59000
   }
-]
+]}
