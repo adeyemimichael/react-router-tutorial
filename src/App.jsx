@@ -9,6 +9,7 @@ import {
   import Volunteer from './layout/Att/Volunteer'
   import NotFound from './layout/Att/NotFound'
   import Career from './layout/Att/Career'
+  import CareerLoader from './layout/Att/new'
 
   //layout import 
   import Routerlayout from './layout/Routerlayout'
@@ -26,8 +27,12 @@ function App() {
         <Route path='attendees' element ={ <Attendee/>}/>
         <Route  path='volunteer' element={<Volunteer/>}/>
         </Route> 
-        <Route path='/' element={CareerLayout}>
-        <Route  path='career' element={<Career />}/>
+        <Route  path='careers'  element={<CareerLayout/>}>
+        <Route  
+       index
+        element={<Career/>}
+        loader={CareerLoader}
+        />
         </Route>
         <Route path='*' element={<NotFound/>}>
           </Route> 

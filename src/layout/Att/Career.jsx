@@ -1,14 +1,18 @@
-
+import { useLoaderData,Link } from "react-router-dom"
 const Career = () => {
+  const careers = useLoaderData()
   return (
-    <div>
-   <h1>hello</h1>
+    <div className="text-black font-bold ">
+  {careers.map(
+    career => (
+      <Link to="/" key={career.id}> 
+      <p>{career.title}</p>
+      <p>{career.location}</p></Link>
+    )
+  )}
     </div>
   )
 }
 
-//loader 
-const CareerLoader = async () => {
-   
-}
-export default Career
+
+export default Career;
