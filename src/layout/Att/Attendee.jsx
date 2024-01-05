@@ -2,9 +2,9 @@
 
 const Attendee = () => {
   return (
-    <div>
-    <label htmlFor="attendee"></label>
-  <h3>hellow world</h3>
+    <div className="text-black font-bold md:flex md:justify-center md:items-center  ">
+   <h1 className="font-semibold text-center text-2xl"> Get your Ticket</h1>
+  
     </div>
   )
 }

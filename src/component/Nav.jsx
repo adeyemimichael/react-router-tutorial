@@ -1,7 +1,7 @@
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState, useEffect  } from 'react';
-
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   
   const [nav, setNav] = useState(true);
@@ -65,9 +65,9 @@ const Navbar = () => {
       <ul className=""> 
     
      <div className="group flex flex-row justify-between w-full hover:border-b-2 hover:border-gray-300">
-    <a href="#hero"><li  className='  cursor-pointer z-40  p-4 text-center font-lex font-medium text-[14px] md:text-[32px] left-12'>Home 
+    < NavLink to ='/' ><li  className='  cursor-pointer z-40  p-4 text-center font-lex font-medium text-[14px] md:text-[32px] left-12'>Home 
       <span className="invisible  group-hover:visible relative  md:left-60  left-28 cursor-pointer  text-center font-lex  md:text-[16px]">
-        Where our heart is</span></li></a>
+        Where our heart is</span></li></NavLink>
     
      </div>
      <div className="group mt-4 flex justify-between w-full hover:border-b-2 hover:border-gray-300">
@@ -84,6 +84,7 @@ know us and our why</span></li></a>
      <a href="#sponsors"><li  className="cursor-pointer z-40  p-4 text-center font-lex font-medium text-[14px] md:text-[30px] " >Partners and Sponsors <span className="invisible  group-hover:visible relative  md:left-2  left-2 cursor-pointer  text-center font-lex  md:text-[16px]">
 give us money&#x1F450;</span></li></a>
      </div>
+   
       </ul>
       </div>
       

@@ -1,4 +1,10 @@
-
+import About from "../component/Infor"
+import Mape from "../component/map"
+import Highlight from "../component/Highlight"
+import Partners from "../component/Partners";
+import Sponsors from "../component/Sponsors";
+import TawkToChat from "../component/Talk"; 
+import Footer from "../component/Footer";
 const Home = () => {
   return (
     <div id='hero'>
@@ -119,6 +125,13 @@ const Home = () => {
     </h1>
     </div>
     </div>
+    <About />
+    <Mape/>
+    <Highlight/>
+    < Partners/>
+    <Sponsors/>
+<Footer/>
+    <TawkToChat/>
         </div>
   )
 }
