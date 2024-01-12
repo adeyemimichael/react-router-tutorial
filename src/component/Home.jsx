@@ -53,7 +53,7 @@ const Home = () => {
     </main>
     <div className='flex mb-16 placeholder:items-center justify-center ' >
     <div className="flex text-[#0c0c0c] border-2  w-[220px] h-[64px] m-4 hover:bg-white hover:text-black text-center justify-center items-center border-slate-900" data-aos="zoom-in" >
-  <NavLink to ="/" target=""  >Get your Ticket </NavLink>
+  <NavLink to ="https://register.unilorintechsummit.org/" target=""  >Get your Ticket </NavLink>
   < TfiArrowRight size= {24} />
   </div>
     </div>
