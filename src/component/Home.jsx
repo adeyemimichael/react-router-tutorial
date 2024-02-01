@@ -1,10 +1,11 @@
-import About from "../component/Infor"
-import Mape from "../component/map"
-import Highlight from "../component/Highlight"
-import Partners from "../component/Partners";
-import Sponsors from "../component/Sponsors";
-import TawkToChat from "../component/Talk"; 
-import Footer from "../component/Footer";
+import About from "./Infor"
+import Mape from "./map"
+import Highlight from "./Highlight"
+import Animation from './Animation';
+import Partners from "./Partners";
+import Sponsors from "./Sponsors";
+import TawkToChat from "./Talk"; 
+import Footer from "./Footer";
 import {NavLink} from "react-router-dom"
 import { TfiArrowRight } from "react-icons/tfi";
 const Home = () => {
@@ -60,6 +61,7 @@ const Home = () => {
     <About />
     <Mape/>
     <Highlight/>
+    <Animation></Animation>
     < Partners/>
     <Sponsors/>
 <Footer/>
